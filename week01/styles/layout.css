@@ -39,7 +39,7 @@
   
   */
 
-  * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -67,10 +67,12 @@ nav {
 }
 
 nav ul {
-    display: flex;
+    /*display: flex;
     justify-content: space-around;
     list-style: none;
-    padding: 10px 0;
+    padding: 10px 0;*/
+    display: grid;
+    grid-template-columns: 1fr, 4;
 }
 
 nav a {

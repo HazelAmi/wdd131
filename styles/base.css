@@ -21,24 +21,26 @@ header h1 span {
 
 /* Navigation */
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     background: #333;
-    padding: 10px;
+    padding: 20px;
+    /
 }
 
 nav ul li {
     margin: 0 15px;
+    list-style: none;
 }
 
-nav ul li a {
+nav ul a {
     color: white;
     text-decoration: none;
     transition: 0.3s;
 }
 
-nav ul li a:hover {
+nav ul a:hover {
     color: yellow;
 }
 
@@ -51,6 +53,12 @@ main {
     gap: 20px;
 }
 
+main h2 {
+    background: #1E3A5F;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 /* Card Layout */
 .card {
     background: white;
@@ -59,7 +67,13 @@ main {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 /* About Section */
+.about h2,
+h3 {
+    text-align: center;
+}
+
 .about-content {
     display: flex;
     align-items: center;
@@ -84,7 +98,7 @@ main {
 
 /* Resources Section */
 .resources ul {
-    list-style-type: none;
+    /* list-style-type: none; */
     padding: 0;
 }
 
@@ -92,6 +106,7 @@ main {
     text-decoration: none;
     color: #007bff;
     transition: 0.3s;
+    align-items: center;
 }
 
 .resources ul li a:hover {
