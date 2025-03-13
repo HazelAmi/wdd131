@@ -40,69 +40,69 @@
   */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 1fr;
-    height: 100vh;
-    font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  font-family: Arial, sans-serif;
 }
 
 /* Header */
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: left;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: left;
 }
 
 /* Navigation */
 nav {
-    background-color: black;
+  background-color: black;
 }
 
 nav ul {
-    /*display: flex;
+  /*display: flex;
     justify-content: space-around;
     list-style: none;
     padding: 10px 0;*/
-    display: grid;
-    grid-template-columns: 1fr, 4;
+  display: grid;
+  grid-template-columns: 1fr 4;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* Main Content */
 main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  padding: 20px;
 }
 
 .main-content {
-    background-color: lightgray;
-    padding: 50px;
+  background-color: lightgray;
+  padding: 50px;
 }
 
 aside {
-    background-color: white;
-    padding: 50px;
+  background-color: white;
+  padding: 50px;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
