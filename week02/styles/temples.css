@@ -1,0 +1,126 @@
+body {
+    margin: -22px auto;
+}
+
+
+header {
+    width: 100%;
+    color: white;
+    font-family: Roboto;
+    background-color: rgb(117, 128, 207);
+    text-transform: capitalize;
+    font-size: 15px;
+
+    h1 {
+        text-align: center;
+    }
+
+
+    .line {
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: black;
+        margin-bottom: 2px;
+        transition: 0.5s;
+    }
+
+    input#hamburger {
+        display: none;
+    }
+
+    #hamburger:checked+.hamburger .line:nth-child(1) {
+        transform: translateY(12px) rotate(-45deg);
+    }
+
+    #hamburger:checked+.hamburger .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    #hamburger:checked+.hamburger .line:nth-child(3) {
+        transform: translateY(-4px) rotate(45deg);
+    }
+
+    .buttons {
+        position: fixed;
+        z-index: 40;
+        background-color: white;
+        height: 40px;
+        width: 45px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        list-style: none;
+
+
+        a {
+            display: none;
+            font-size: 30px;
+            text-decoration: none;
+
+        }
+    }
+
+
+
+
+    .open {
+        position: fixed;
+        top: -23px;
+        right: 49px;
+        height: 98%;
+        width: 73%;
+        padding: 10px;
+        background-color: black;
+        transition: 0.5s;
+        z-index: 30;
+
+        a {
+            display: flex;
+            gap: -40%;
+            color: white;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            text-transform: capitalize;
+            border-top: 3px solid white;
+            border-bottom: 3px solid white;
+            padding: 3px 0;
+
+        }
+    }
+}
+
+main {
+    font-family: Roboto;
+
+    img {
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    background-color: rgb(117, 128, 207);
+
+    span {
+        margin-top: -1rem;
+    }
+}

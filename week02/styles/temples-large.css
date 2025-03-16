@@ -1,0 +1,101 @@
+@media screen and (min-width:750px) {
+
+    body {
+        margin: 0;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        color: white;
+        font-family: Roboto;
+        background-color: rgb(117, 128, 207);
+        height: 3.5rem;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            justify-self: start;
+            align-items: self-start;
+            margin-top: 4px;
+        }
+
+        .buttons {
+            display: none;
+        }
+
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 550px;
+
+            a {
+                display: block;
+                font-size: 20px;
+                color: white;
+                font-family: Roboto;
+            }
+
+
+            a:hover {
+                border-bottom: 3px solid rgb(226, 222, 163);
+            }
+
+        }
+    }
+
+    main {
+        height: fit-content;
+        background-color: rgb(224, 223, 223);
+        justify-self: center;
+        align-self: center;
+        max-width: 100rem;
+        margin: 1rem auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+        justify-content: center;
+        align-items: center;
+        margin: 3px 10px;
+
+
+        img {
+            /* max-width: 640px;
+            width: 350px; */
+            object-fit: cover;
+        }
+
+        figcaption {
+            display: none;
+        }
+
+        figure:hover {
+            figcaption {
+                display: block;
+                position: absolute;
+                font-size: 20px;
+            }
+        }
+
+        figure {
+            border-radius: 50%;
+        }
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: Roboto;
+        font-size: 20px;
+        background-color: rgb(117, 128, 207);
+
+        span {
+            margin-top: -1rem;
+        }
+    }
+}
