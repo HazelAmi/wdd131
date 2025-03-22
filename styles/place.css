@@ -1,0 +1,90 @@
+@media screen and (max-width:900px) {
+    *{
+        font-family: Roboto;        
+        margin: 0;
+        padding: 0;
+    }
+    
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #c8102e;
+        color: white;
+        width: 100%;
+
+
+        h1{
+            flex: 1 1 100%;
+        }
+    }
+
+    main{
+
+        .welcomeimage{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            img{
+                max-width: 650px;
+                width:23rem;
+            }
+        }
+
+        .countrydata{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.4rem;
+            text-align: center;
+            padding: .2rem;
+            margin-bottom: 3rem;
+            border-bottom: 2px solid black;
+            
+            ul{
+            li{
+            list-style: none;
+            }
+            }
+        }
+
+        .weatherdata{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            margin: auto .1rem;
+            margin-bottom: 3rem;
+
+
+            img{
+                max-width: 300px;
+                width: 200px;
+                flex: 1 1 100%;
+            }
+
+
+             
+            ul{
+                li{
+                list-style: none;
+                }
+                }
+        }
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: .9rem;
+        background-color: #c8102e;
+        color: white;
+        height: 6rem;
+    }
+}
