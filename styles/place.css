@@ -1,11 +1,11 @@
 @media screen and (max-width:900px) {
-    *{
-        font-family: Roboto;        
+    * {
+        font-family: Roboto;
         margin: 0;
         padding: 0;
     }
-    
-    header{
+
+    header {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -15,69 +15,71 @@
         width: 100%;
 
 
-        h1{
+        h1 {
             flex: 1 1 100%;
         }
     }
 
-    main{
+    main {
 
-        .welcomeimage{
+        .welcomeimage {
             display: flex;
             justify-content: center;
             align-items: center;
-            
-            img{
+
+            img {
                 max-width: 650px;
-                width:23rem;
+                width: 23rem;
             }
         }
 
-        .countrydata{
+        .countrydata {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             font-size: 1.4rem;
             text-align: center;
+            background: rgba(255, 255, 255, 0.8);
             padding: .2rem;
             margin-bottom: 3rem;
             border-bottom: 2px solid black;
-            
-            ul{
-            li{
-            list-style: none;
-            }
+
+            ul {
+                li {
+                    list-style: none;
+                }
             }
         }
 
-        .weatherdata{
+        .weatherdata {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             font-size: 1.2rem;
+            background: rgba(255, 255, 255, 0.8);
             margin: auto .1rem;
             margin-bottom: 3rem;
 
 
-            img{
+            img {
                 max-width: 300px;
                 width: 200px;
                 flex: 1 1 100%;
             }
 
 
-             
-            ul{
-                li{
-                list-style: none;
+
+            ul {
+                li {
+                    list-style: none;
                 }
-                }
+            }
         }
     }
 
-    footer{
+    footer {
         display: flex;
         flex-direction: column;
         justify-content: center;

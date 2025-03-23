@@ -1,44 +1,44 @@
 @media screen and (min-width: 901px) {
-    *{
+    * {
         margin: 0;
         padding: 0;
-        font-family: Roboto;        
+        font-family: Roboto;
         text-align: center;
 
-        ul{
-            li{
+        ul {
+            li {
                 list-style: none;
             }
         }
     }
 
 
-    header{
+    header {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color:black;
+        background-color: #c8102e;
         color: white;
-        padding:4rem auto;
+        padding: 4rem auto;
     }
 
-    main{
+    main {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         grid-template-rows: repeat(auto-fit, minmax(20rem, 20rem, 10rem));
-        background-image: url(/images/causeway\ \(2\).webp);
+        background-image: url(images/causeway.webp);
         background-repeat: no-repeat;
         background-size: 100%;
         height: 100vh;
 
-        .welcomeimage{
-            img{
+        .welcomeimage {
+            img {
                 display: none;
             }
         }
 
-        .countrydata{
+        .countrydata {
             position: absolute;
             background-color: rgba(255, 255, 255, 0.84);
             left: 2rem;
@@ -47,24 +47,24 @@
             padding: 2rem;
         }
 
-        .weatherdata{
+        .weatherdata {
             position: absolute;
             background-color: rgba(255, 255, 255, 0.84);
             bottom: -2rem;
-            right:1rem;
+            right: 1rem;
             width: 15rem;
             padding: 2rem;
 
-            img{
+            img {
                 width: 10rem;
             }
         }
     }
 
 
-    footer{
-        padding:1rem;
-        background-color:#c8102e;
+    footer {
+        padding: 1rem;
+        background-color: #c8102e;
         color: white;
     }
 

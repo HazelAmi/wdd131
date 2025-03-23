@@ -1,22 +1,22 @@
 //windchill calculation
-const apiURL= "https://api.openweathermap.org/data/2.5/weather?lat=5.5593&lon=0.1974&appid=b2f21d334d4a4feb8a2dffa3560b3b92&units=metric"
+// const apiURL= "https://lh3.googleusercontent.com/gps-cs-s/AB5caB_uICaxzXSFg8QQ91Vf32q20jUyhshBiarxxtQEqHKFU2Igpn5CMKejUQAl74Sl5gPtaX5O1BHO9zvMM8WKIaqkApCt5IC4z8NF4WRh8RzFLKbWs8ppR25oNKAu7KOop5Q1JBPV=w810-h468-n-k-no"
 
 
-//function to call api
-async function callApi(){
-    const apicall = new Request(apiURL)
-    const response = await fetch(apicall)
-    const data = await response.json()
-    Populate(data)
-    calculateWindChill(data)
-    console.log(data)
-}
+// //function to call api
+// async function callApi(){
+//     const apicall = new Request(apiURL)
+//     const response = await fetch(apicall)
+//     const data = await response.json()
+//     Populate(data)
+//     calculateWindChill(data)
+//     console.log(data)
+// }
 
-callApi()
+// callApi()
 
-//create a list to add the elements to it
-const ul = document.createElement("ul")
-const list = document.createElement("li")
+// //create a list to add the elements to it
+// const ul = document.createElement("ul")
+// const list = document.createElement("li")
 
 function Populate(data){
     document.querySelector(".temperature").textContent=`temperature: ${data.main.temp}\u00B0c`
