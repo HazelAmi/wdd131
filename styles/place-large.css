@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #c8102e;
+    --text-color: white;
+}
+
 @media screen and (min-width: 901px) {
     * {
         margin: 0;
@@ -30,8 +35,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #c8102e;
-        color: white;
+        background-color: var(--primary-color);
+        color: var(--text-color);
     }
 
     main {
@@ -55,6 +60,17 @@
         top: 3rem;
         width: 15rem;
         padding: 2rem;
+        position: relative;
+    }
+
+    /* ::after pseudo-element */
+    .countrydata::after {
+        content: "";
+        display: block;
+        width: 80%;
+        height: 4px;
+        background-color: var(--primary-color);
+        margin-top: 10px;
     }
 
     .weatherdata {
@@ -72,7 +88,7 @@
 
     footer {
         padding: 1rem;
-        background-color: #c8102e;
-        color: white;
+        background-color: var(--primary-color);
+        color: var(--text-color);
     }
 }

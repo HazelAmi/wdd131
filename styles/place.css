@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #c8102e;
+    --text-color: white;
+}
+
 @media screen and (max-width: 900px) {
     * {
         font-family: Roboto;
@@ -25,8 +30,8 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        background-color: #c8102e;
-        color: white;
+        background-color: var(--primary-color);
+        color: var(--text-color);
         width: 100%;
     }
 
@@ -56,6 +61,17 @@
         padding: 0.2rem;
         margin-bottom: 3rem;
         border-bottom: 2px solid black;
+        position: relative;
+    }
+
+    /* ::after pseudo-element */
+    .countrydata::after {
+        content: "";
+        display: block;
+        width: 80%;
+        height: 4px;
+        background-color: var(--primary-color);
+        margin-top: 10px;
     }
 
     .countrydata ul li {
@@ -83,8 +99,8 @@
         justify-content: center;
         align-items: center;
         font-size: 0.9rem;
-        background-color: #c8102e;
-        color: white;
+        background-color: var(--primary-color);
+        color: var(--text-color);
         height: 6rem;
     }
 }
