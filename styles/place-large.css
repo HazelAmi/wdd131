@@ -4,14 +4,12 @@
         padding: 0;
         font-family: Roboto;
         text-align: center;
-
-        ul {
-            li {
-                list-style: none;
-            }
-        }
     }
-     
+
+    ul li {
+        list-style: none;
+    }
+
     body::before {
         content: "";
         position: absolute;
@@ -23,10 +21,10 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        filter: brightness(50%); /* Darkens the image */
+        filter: brightness(50%);
         z-index: -1;
     }
-    
+
     header {
         display: flex;
         flex-direction: column;
@@ -34,52 +32,47 @@
         align-items: center;
         background-color: #c8102e;
         color: white;
-        /* padding: 4rem auto; */
     }
 
     main {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        grid-template-rows: repeat(auto-fit, minmax(20rem, 20rem, 10rem));
+        grid-template-rows: repeat(auto-fit, minmax(20rem, 10rem));
         background-image: url('images/causeway.webp');
         background-repeat: no-repeat;
         background-size: 100%;
         height: 100vh;
-
-        .welcomeimage {
-            img {
-                display: none;
-            }
-        }
-
-        .countrydata {
-            position: absolute;
-            background-color: rgba(255, 255, 255, 0.84);
-            left: 2rem;
-            top: 3rem;
-            width: 15rem;
-            padding: 2rem;
-        }
-
-        .weatherdata {
-            position: absolute;
-            background-color: rgba(255, 255, 255, 0.84);
-            bottom: -2rem;
-            right: 1rem;
-            width: 15rem;
-            padding: 2rem;
-
-            img {
-                width: 10rem;
-            }
-        }
     }
 
+    .welcomeimage img {
+        display: none;
+    }
+
+    .countrydata {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.84);
+        left: 2rem;
+        top: 3rem;
+        width: 15rem;
+        padding: 2rem;
+    }
+
+    .weatherdata {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.84);
+        bottom: -2rem;
+        right: 1rem;
+        width: 15rem;
+        padding: 2rem;
+    }
+
+    .weatherdata img {
+        width: 10rem;
+    }
 
     footer {
         padding: 1rem;
         background-color: #c8102e;
         color: white;
     }
-
 }
