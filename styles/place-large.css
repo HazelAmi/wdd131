@@ -82,6 +82,16 @@
         padding: 2rem;
     }
 
+    /* ::after pseudo-element */
+    .weatherdata::after {
+        content: "";
+        display: block;
+        width: 80%;
+        height: 4px;
+        background-color: var(--primary-color);
+        margin-top: 10px;
+    }
+
     .weatherdata img {
         width: 10rem;
     }
