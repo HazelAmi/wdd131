@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A temple album page.">
+    <meta name="author" content="Deinmoere Hazel Ami Alafegha-Quakumey" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" />
+    <script defer src="scripts/filtered-temples.js"></script>
+    <title>My Favourite Temples</title>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <div class="controls">
+            <div class="buttons">
+                <div class="row">
+                    <input type="checkbox" id="hamburger" />
+                    <label for="hamburger" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </label>
+                </div>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" id="allTemples">Home</a></li>
+                    <li><a href="#" id="oldTemples">Old</a></li>
+                    <li><a href="#" id="newTemples">New</a></li>
+                    <li><a href="#" id="largeTemples">Large</a></li>
+                    <li><a href="#" id="smallTemples">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>    
+        <div class="res-grid">                
+
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸 Deinmoere Hazel Ami Alafegha-Quakumey 🌸 Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

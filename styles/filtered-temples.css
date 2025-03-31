@@ -1,0 +1,182 @@
+@media screen and (max-width: 749px) {
+    body {
+        margin: 0 auto;
+    }
+
+    header {
+        width: 100%;
+        color: white;
+        font-family: Roboto;
+        background-color: rgb(117, 128, 207);
+        font-size: 15px;
+        text-align: center;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    .line {
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: rgb(74, 80, 125);
+        margin-bottom: 2px;
+        transition: 0.5s;
+    }
+
+    .hamburger {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        z-index: 50;
+    }
+
+    input#hamburger {
+        display: none;
+    }
+
+    #hamburger:checked~nav {
+        display: block;
+    }
+
+    #hamburger:checked+.hamburger .line:nth-child(1) {
+        transform: translateY(12px) rotate(-45deg);
+    }
+
+    #hamburger:checked+.hamburger .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    #hamburger:checked+.hamburger .line:nth-child(3) {
+        transform: translateY(-4px) rotate(45deg);
+    }
+
+    .buttons {
+        position: fixed;
+        z-index: 40;
+        background-color: white;
+        height: 40px;
+        width: 45px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgb(117, 128, 207);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 10px;
+        right: 10px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .navigation a {
+        display: none;
+        font-size: 30px;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+    }
+
+    /* Navigation bar when hamburger is opened */
+.open {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    background-color: rgb(117, 128, 207);
+    padding: 20px;
+    transition: 0.5s;
+    z-index: 30;
+}
+
+.open a {
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 20px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    transition: 0.3s;
+}
+
+.open a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+    /* .open {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 75%;
+        padding: 20px;
+        background-color: rgb(117, 128, 207);
+        transition: 0.5s;
+        z-index: 30;
+    }
+
+    .open a {
+        display: flex;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        border-top: 3px solid white;
+        border-bottom: 3px solid white;
+        padding: 8px 0;
+        transition: 0.3s;
+    }
+
+    .open a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    } */
+    
+
+    main {
+        font-family: Roboto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main img {
+        max-width: 400px;
+        width: 100%;
+    }
+    
+
+    main ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    main ul li {
+        text-align: left;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: Roboto;
+        font-size: 20px;
+        background-color: rgb(117, 128, 207);
+    }
+
+    footer span {
+        margin-top: -1rem;
+    }
+}
