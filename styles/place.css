@@ -6,7 +6,7 @@
 
 @media screen and (max-width: 900px) {
     * {
-        font-family: Roboto;
+        font-family: Josefin sans;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -20,6 +20,7 @@
         background-color: var(--primary-color);
         color: var(--text-color);
         width: 100%;
+        padding: 25px;
     }
 
     h1 {
