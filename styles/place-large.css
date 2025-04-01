@@ -36,6 +36,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 20px;
         background-color: var(--primary-color);
         color: var(--text-color);
     }
@@ -54,21 +55,29 @@
         background-color: var(--secondary-color);
         color: white;
         align-self: center;
+        margin: 0px 2px 0px -50px;
         padding: 10px;
+        padding-left: 1rem;
+        text-align: left;
+        font-size: 2rem;
     }
 
+  
     .heroimage img {
         display: none;
+        width: 100vw;
+        height: auto;
     }
 
     .countrydata {
         position: absolute;
         background-color: rgba(250, 250, 250, 0.84);
-        left: 2rem;
+        right: 30rem;
         top: 3rem;
         width: 15rem;
         padding: 2rem;
         position: relative;
+        
     }
 
     /* ::after pseudo-element */
@@ -99,12 +108,14 @@
         background-color: var(--secondary-color);
         margin-top: 10px;
     }
+
     .weatherdata h2::after {
         content: "  ⛅";
     }
 
     .weatherdata img {
-        width: 10rem;
+        display: none;
+        /* width: 10rem; */
     }
 
     footer {
