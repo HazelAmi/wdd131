@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/form.css">    
+    <link rel="stylesheet" href="styles/form.css">  
+    <link rel="stylesheet" href="styles/form-large.css">  
     <script defer src="scripts/form.js"></script>
     <title>Product Review</title>
 </head>
@@ -19,8 +20,8 @@
         <h1>Product Review</h1>
     </header>
 
-    <main>
-        <form method="get" action="review.html" class="form1">
+    <main>       
+        <form method="get" action="review.html" class="form1" id="reviewForm">
             <fieldset>
                 <label for="productName">Product Name
                     <select name="productName" id="productName" required>
@@ -29,7 +30,7 @@
                     </select>                    
                 </label>
 
-                <div class="rating"><label>Overall Rating</label></div>
+                <div class="rating"><label>Overall Rating</label>
                 
                     <label>
                         ☆
@@ -45,7 +46,7 @@
                         <input type="radio" name="rating" id="fourStar" value="4"/> </label>
                     <label>
                         ☆☆☆☆☆
-                        <input type="radio" name="rating" id="fiveStar" value="5"/></label>
+                        <input type="radio" name="rating" id="fiveStar" value="5"/></label></div>
                 
 
                 <label>Date of Installation<input type="date" name="installationDate" id="installDate" required></label>
