@@ -1,0 +1,132 @@
+:root {
+    --primary-color: rgb(51, 36, 7);
+    --secondary-color: rgb(174, 166, 152);
+    --text-color: wheat;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--text-color);
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+
+/*----------- FORM STYLING  --------------*/
+
+
+.form1 fieldset {
+    margin: 2rem 0;
+    background-color: var(--secondary-color);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: .5rem 2%;
+}
+
+input, textarea, select {
+   
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    margin: .25rem;
+}
+.form1 label {
+    display: block;
+    padding-top: 1rem;
+    
+    font-size: 1rem;
+}
+
+.form1 div {
+    padding-top: 1rem;
+    
+    font-size: 1.5rem;
+}
+
+#oneStar, #twoStar, #threeStar, #fourStar, #fiveStar{
+    
+    display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+.rating {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem; 
+    cursor: pointer;
+}
+#productName, #installDate, #review, #userName{
+    display: block;
+    width: 96%;
+    max-width: 400px;
+}
+.form1 input [type="radio"],
+.form1 input [type="checkbox"] {
+    margin-right: 6px;
+}
+
+.form1 input [type="date"],
+.form1 input [type="checkbox"] {
+    display: block;
+}
+
+span {
+    color: var(--text-color);
+}
+.form1 input[type="submit"] {
+    border:none ;
+    background-color: rgb(207, 202, 189);
+    color: var(--primary-color) ;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 2rem 2% 4rem 2%;
+    box-shadow: 1px 1px 4px  #130e0e;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: var(--primary-color);
+    padding: .5rem 2%;
+    text-align: center;
+    color: var(--text-color);
+}

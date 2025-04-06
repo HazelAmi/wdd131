@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a product review form">
+    <meta name="author" content="Deinmoere Hazel Ami Alafegha-Quakumey">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/form.css">    
+    <script defer src="scripts/form.js"></script>
+    <title>Product Review</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form methood="get" action="review.html" class="form1">
+            <fieldset>
+                <label for="productName">Product Name
+                    <select name="productName" id="productName" required>
+                        <option value="" disabled selected>Choose a Product ...</option>
+                        <!-- Dynamically populated by JS -->
+                    </select>                    
+                </label>
+
+                <div class="rating"><label>Overall Rating</label></div>
+                
+                    <label>
+                        ☆
+                        <input type="radio" name="rating" id="oneStar" value="1" required /> </label>
+                    <label>
+                        ☆☆
+                        <input type="radio" name="rating" id="twoStar" value="2" /> </label>
+                    <label>
+                        ☆☆☆
+                        <input type="radio" name="rating" id="threeStar" value="3" /> </label>
+                    <label>
+                        ☆☆☆☆
+                        <input type="radio" name="rating" id="fourStar" value="4" /> </label>
+                    <label>
+                        ☆☆☆☆☆
+                        <input type="radio" name="rating" id="fiveStar" value="5" /></label>
+                
+
+                <label>Date of Installation<input type="date" name="installationDate" id="installDate" required></label>
+
+                <div><label for="features">Which Features did you find useful in the Product? 
+                    <br><em>(Check all that apply)</em></label></div>
+                    <div class="features">
+                        <label><input type="checkbox" id="durability" name="features" value="Durability" /> Durability</label>
+                        <label><input type="checkbox" id="ease" name="features" value="Ease of Use" /> Ease of Use</label>
+                        <label><input type="checkbox" id="performance" name="features" value="Performance" /> Performance</label>
+                        <label><input type="checkbox" id="design" name="features" value="Design" /> Design</label>
+                    </div>
+
+                <div><label for="review">Written Review <span>(Optional)</span></label></div>
+                <textarea id="review" name="review" rows="5"></textarea>
+
+                <div><label for="userName">Your Name <span>(Optional)</span>
+                    <input type="text" id="userName" name="username" />                
+                </label></div>
+                
+                <div><input type="submit" value="Post Review"></div>
+                
+            </fieldset>            
+
+            
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸 Deinmoere Hazel Ami Alafegha-Quakumey 🌸 Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
