@@ -2,6 +2,7 @@
     --primary-color: rgb(51, 36, 7);
     --secondary-color: rgb(174, 166, 152);
     --text-color: wheat;
+    --accent1-color:rgb(56, 11, 24);
 }
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
@@ -108,6 +109,9 @@ input, textarea, select {
 
 span {
     color: var(--text-color);
+}
+.opt {
+    color: var(--accent1-color);
 }
 .form1 input[type="submit"] {
     border:none ;
