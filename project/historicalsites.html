@@ -11,14 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/ghtreasures.css">
-    <!-- <link rel="stylesheet" href="styles/ghtreasures-large.css">   -->
+    <link rel="stylesheet" href="styles/ghtreasures-large.css">  
 
     <script defer src="scripts/ghtreasures.js"></script>
     <title>Historical Sites</title>
 </head>
 <body>
-    <header>
-      
+    <header>      
         <div class="logo-box">      
           <img src="images/logo.png" 
           alt="An image of ghana treasures logo" width="100px" height="100px" loading="lazy"><!-- logo will go here -->
@@ -26,40 +25,45 @@
         <nav>
           <!-- navigation here -->
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="ghtreasures.html">Home</a></li>
             <li><a href="historicalsites.html">Historical Sites</a></li>
-            <li><a href="naturalsites.html">Natural Sites</a></li>
+            <li><a href="naturalsites.html">Natural Sites & Leisure</a></li>
             <li><a href="review.html">Review</a></li>                     
           </ul>
-        </nav>
+        </nav></header>
         <hr>
     <main>
-        <h1>Top Destinations in Ghana</h1>
-        <section class="destinations">
-            <article class="destination">
-                <h2>Cape Coast Castle</h2>
-                <img src="images/cape-coast-castle.jpg" alt="Cape Coast Castle" loading="lazy">
-                <p><strong>History:</strong> A UNESCO World Heritage site, Cape Coast Castle was a major hub during the transatlantic slave trade.</p>
-                <p><strong>Highlights:</strong> Explore the dungeons, the Door of No Return, and the museum.</p>
-                <p><strong>Visitor Tips:</strong> Guided tours are available; visit early to avoid crowds.</p>
-                <button class="favorite-btn" data-site="Cape Coast Castle">Add to Favorites</button>
-            </article>
-            <article class="destination">
-                <h2>Kakum National Park</h2>
-                <img src="images/kakum-national-park.jpg" alt="Kakum National Park canopy walkway" loading="lazy">
-                <p><strong>History:</strong> Established in 1992, this park protects a tropical rainforest.</p>
-                <p><strong>Highlights:</strong> Walk the famous canopy walkway 30 meters above the forest floor.</p>
-                <p><strong>Visitor Tips:</strong> Wear comfortable shoes; the canopy walk takes about an hour.</p>
-                <button class="favorite-btn" data-site="Kakum National Park">Add to Favorites</button>
-            </article>
-            <article class="destination">
-                <h2>Mole National Park</h2>
-                <img src="images/mole-national-park.jpg" alt="Mole National Park wildlife" loading="lazy">
-                <p><strong>History:</strong> Ghana’s largest wildlife refuge, founded in 1958.</p>
-                <p><strong>Highlights:</strong> Spot elephants, antelopes, and over 300 bird species on a safari.</p>
-                <p><strong>Visitor Tips:</strong> Best visited during the dry season (December to April).</p>
-                <button class="favorite-btn" data-site="Mole National Park">Add to Favorites</button>
-            </article>
+      <section class="hero-slider">
+        <div class="slider">
+          <div class="slide active">
+            <img src="images/cape coast castle.jpeg" alt="Cape Coast Castle">
+            <div class="caption">Cape Coast Castle</div>
+          </div>
+          <div class="slide">
+            <img src="images/kakum.jpeg" alt="Kakum National Park">
+            <div class="caption">Kakum National Park</div>
+          </div>
+          <div class="slide">
+            <img src="images/mole.jpeg" alt="Mole National Park">
+            <div class="caption">Mole National Park</div>
+          </div>
+          <div class="slide">
+            <img src="images/volta.jpg" alt="Lake Volta">
+            <div class="caption">Lake Volta</div>
+          </div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </section>
+        
+
+          <section class="destinations" id="destinations-container">
+              <!-- Articles will be dynamically inserted here -->
+          </section>
+          <section class="favorites">
+              <h2>Your Favorites</h2>
+              <ul id="favorites-list"></ul>
+          </section>
 
     </main>
     <footer>
